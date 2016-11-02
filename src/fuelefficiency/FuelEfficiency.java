@@ -21,6 +21,7 @@ public class FuelEfficiency {
         //prompts the user for an amount of fuel in litres
         System.out.print("How much fuel do you have?(litres):");
         
+        //rounds the decimals of each number to 2 decimal places
         DecimalFormat f = new DecimalFormat("0.00");
         
         //gets the user's amount of fuel for calculations
