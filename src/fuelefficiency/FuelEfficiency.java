@@ -6,7 +6,7 @@
 
 package fuelefficiency;
 import java.util.Scanner;
-
+import java.text.DecimalFormat;
 /**
  *
  * @author nohin6777
@@ -21,6 +21,8 @@ public class FuelEfficiency {
         //prompts the user for an amount of fuel in litres
         System.out.print("How much fuel do you have?(litres):");
         
+        DecimalFormat f = new DecimalFormat("0.00");
+        
         //gets the user's amount of fuel for calculations
         Scanner input = new Scanner(System.in);
         double fuelAmount = input.nextDouble();
@@ -33,10 +35,10 @@ public class FuelEfficiency {
         
         //prints how far each vehicle can go
         System.out.println("On " + fuelAmount + " litres of gas the vehicles can drive:\n\n"
-                + "Truck: " + truck1.getDistance(fuelAmount) + " KM"
-                + "\nCar: " + car1.getDistance(fuelAmount) + " KM"
-                + "\nHybrid Car: " + hCar1.getDistance(fuelAmount) + " KM"
-                + "\nMotorcycle: " + mCycle1.getDistance(fuelAmount) + " KM");
+                + "Truck: " + f.format(truck1.getDistance(fuelAmount)) + " KM"
+                + "\nCar: " + f.format(car1.getDistance(fuelAmount)) + " KM"
+                + "\nHybrid Car: " + f.format(hCar1.getDistance(fuelAmount)) + " KM"
+                + "\nMotorcycle: " + f.format(mCycle1.getDistance(fuelAmount)) + " KM");
         
     }
     
