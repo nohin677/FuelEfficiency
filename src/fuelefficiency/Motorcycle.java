@@ -16,7 +16,7 @@ public class Motorcycle extends Vehicle{
      * sets the distance that the motorcycle could go on the amount 
      * of gas provided by the user
      * pre: none
-     * post: returns dist
+     * post: returns distance
      * @param litres
      * @return 
      */
